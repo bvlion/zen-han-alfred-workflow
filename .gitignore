@@ -1,0 +1,4 @@
+.DS_Store
+src/.bundle
+src/vendor/bundle
+.ruby-lsp
