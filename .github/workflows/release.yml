@@ -1,0 +1,28 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - "v"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create workflow file
+        run: |
+          mv src/string_extensions.rb .
+          zip release.zip string_extensions.rb han2zen.rb zen2han.rb prefs.plist 76FE2D16-BD50-49FC-816B-1F5E931119C2.png 01D27347-218A-4560-B256-AED1F71C0309.png icon.png info.plist
+          mv release.zip zenhan.alfredworkflow
+
+      - name: Upload Release Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: zenhan.alfredworkflow
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
