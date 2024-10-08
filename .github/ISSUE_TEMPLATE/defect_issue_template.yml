@@ -1,0 +1,27 @@
+name: 不具合報告
+description: 期待する動作でなかった場合はこちらから
+labels: ["bug"]
+assignees:
+  - bvlion
+body:
+  - type: checkboxes
+    id: target
+    attributes:
+      label: 不具合が起きている対象
+      description: 「zen」と「han」どちらで発生しているか選択してください
+      options:
+        - label: zen
+        - label: han
+          required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待している動作
+      description: 何の値がどう変換されることを期待しているか記載してください
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: その他
+      description: その他に追加で情報があれば記載してください
