@@ -4,6 +4,11 @@
 
 文字列に含まれる英数字、記号、カタカナを全角から半角に、または半角から全角に変換しクリップボードに記録する Alfred 向け workflow です。
 
+## リリース方法
+
+[GitHub の Releases](https://github.com/bvlion/zen-han-alfred-workflow/releases/new) から新しいタグを切ることで workflow が alfredworkflow ファイルを作成しリリースに添付してくれます。
+
+
 ## ダウンロード
 
 [Releases](https://github.com/bvlion/zen-han-alfred-workflow/releases) の最新リリースから `zenhan.alfredworkflow` をダウンロードしてダブルクリックでインストールしてください。
@@ -13,7 +18,7 @@
 - zsh
 - ruby
 
-※ どちらも Mac に初期状態で入っているもので問題ありません。
+※ どちらも Apple シリコン搭載の Mac に初期状態で入っているもので問題ありません。
 
 ## 使い方
 
@@ -35,7 +40,7 @@
 
 ## 不具合報告
 
-不具合の報告や改善案は [issue template](https://github.com/bvlion/zen-han-alfred-workflow/issues) から作成ください。  
+不具合の報告や改善案は [issue template](https://github.com/bvlion/zen-han-alfred-workflow/issues/new/choose) から作成ください。  
 Pull request も歓迎しております。
 
 ## ライセンス
